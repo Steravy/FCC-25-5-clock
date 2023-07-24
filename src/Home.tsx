@@ -10,7 +10,7 @@ function Home() {
     <Fragment>
       <Navbar />
 
-      <main className='pt-20 sm:pt-36 ' >
+      <main className='pt-36 sm:pt-46 ' >
         <ClockFrame />
       </main>
     </Fragment>

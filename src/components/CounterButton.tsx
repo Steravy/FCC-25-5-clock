@@ -1,5 +1,6 @@
 import { useCallback } from "react";
 import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
+import { HiChevronDown, HiChevronUp } from "react-icons/hi";
 
 interface CounterProps {
     title: string;
@@ -27,12 +28,12 @@ const CounterButton: React.FC<CounterProps> = ({ title, value, onChange }) => {
                 {/* <p className="font-light text-gray-600" >{subtitle}</p> */}
             </article>
             <article className='flex flex-row items-center gap-8' >
-                <div onClick={handleReduce} className="w-10 h-10 rounded-full border-[1px] border-neutral-400 flex items-center justify-center text-neutral-600 cursor-pointer hover:opacity-80 transition" >
-                    <AiOutlineMinus />
+                <div onClick={handleReduce} className="w-10 h-10 rounded-full text-zinc-100 border-[1px] border-neutral-400 flex items-center justify-center cursor-pointer hover:opacity-80 transition" >
+                    <HiChevronDown size={30} />
                 </div>
-                <span className="font-light text-xl text-neutral-600" >{value}</span>
-                <div onClick={handleAdd} className="w-10 h-10 rounded-full border-[1px] border-neutral-400 flex items-center justify-center text-neutral-600 cursor-pointer hover:opacity-80 transition" >
-                    <AiOutlinePlus />
+                <span className="font-light text-xl text-zinc-100 " >{value}</span>
+                <div onClick={handleAdd} className="w-10 h-10 rounded-full text-zinc-100 border-[1px] border-neutral-400 flex items-center justify-center cursor-pointer hover:opacity-80 transition" >
+                    <HiChevronUp size={30} />
                 </div>
             </article>
         </article>
