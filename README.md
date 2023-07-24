@@ -4,7 +4,7 @@
   <img src="https://github.com/Steravy/FCC-25-5-clock/blob/main/public/dsk.png" alt="JavaScript Calculator" width="800px" height='auto' />
 </div>
 <div align="center">
-  <img src="https://github.com/Steravy/FCC-25+5-clock/blob/main/public/mobile.png" alt="JavaScript Calculator" width="400px" height='auto' />
+  <img src="https://github.com/Steravy/FCC-25-5-clock/blob/main/public/mobile.png" alt="JavaScript Calculator" width="400px" height='auto' />
 </div>
 
 This is a web application built with React as part of the freeCodeCamp projects series to earn the Front End Development Libraries Certification. Note that the aim of this build is not to deliver a great user experience or a great interface design but to get the test pass on FCC.
