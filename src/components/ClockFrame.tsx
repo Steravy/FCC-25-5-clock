@@ -1,4 +1,4 @@
-import { Fragment, useState } from "react"
+import { Fragment, useEffect, useRef, useState } from "react"
 import { DisplayState } from "../utils/providers"
 import Container from "./Container"
 import CounterButton from "./CounterButton"
@@ -12,7 +12,7 @@ const ClockFrame = () => {
     const max = 60 * 60;
     const interval = 60;
 
-    // const [currentTime, setCurrentTime] = useState<number>((25 * 60 + 5));
+    const audioRef = useRef<HTMLAudioElement>(null);
     const [breakTime, setBreakTime] = useState(defaultBreakTime);
     const [sessionTime, setSessionTime] = useState(defaultSessionTime);
     const [currentTime, setCurrentTime] = useState<DisplayState>({
@@ -33,6 +33,13 @@ const ClockFrame = () => {
         const audio = document.getElementById("beep") as HTMLAudioElement;
         audio.pause();
         audio.currentTime = 0;
+    };
+
+    const decrementDisplay = () => {
+        setCurrentTime((prev) => ({
+            ...prev,
+            time: prev.time - 1,
+        }));
     };
 
     const startStop = () => {
@@ -56,6 +63,33 @@ const ClockFrame = () => {
             timerRunning: false,
         });
     };
+
+    useEffect(() => {
+
+        let timerID: number;
+        if (!currentTime.timerRunning) return;
+
+        if (currentTime.timerRunning) {
+            timerID = window.setInterval(decrementDisplay, 1000);
+        }
+
+        return () => {
+            window.clearInterval(timerID);
+        };
+    }, [currentTime.timerRunning]);
+
+    useEffect(() => {
+        if (currentTime.time === 0) {
+            const audio = document.getElementById("beep") as HTMLAudioElement;
+            audio.currentTime = 2;
+            audio.play().catch((err) => console.log(err));
+            setCurrentTime((prev) => ({
+                ...prev,
+                timeType: prev.timeType === "Session" ? "Break" : "Session",
+                time: prev.timeType === "Session" ? breakTime : sessionTime,
+            }));
+        }
+    }, [currentTime, breakTime, sessionTime]);
 
 
     return (
@@ -88,6 +122,7 @@ const ClockFrame = () => {
                             />
                         </article>
                         <ClockCounter
+                            audioRef={audioRef}
                             currentTime={currentTime}
                             reset={reset}
                             startStop={startStop}
