@@ -8,7 +8,7 @@ const Navbar = () => {
             <nav className="py-4 border-b-[1px]">
                 <Container>
                     <article className="flex flex-row justify-center items-center " >
-                        <h1 className="text-2xl">Markdown Previewer</h1>
+                        <h1 className="text-2xl">25 + 5 Clock</h1>
                     </article>
                 </Container>
             </nav>

@@ -1,6 +1,6 @@
 import { Fragment } from 'react';
-import Navbar from './components/navbar/Navbar'
-import Container from './components/Container';
+import Navbar from './components/navbar/Navbar';
+import ClockFrame from './components/ClockFrame';
 
 function Home() {
 
@@ -10,10 +10,8 @@ function Home() {
     <Fragment>
       <Navbar />
 
-      <main className='' >
-        <Container>
-
-        </Container>
+      <main className='pt-20 sm:pt-36 ' >
+        <ClockFrame />
       </main>
     </Fragment>
   )
