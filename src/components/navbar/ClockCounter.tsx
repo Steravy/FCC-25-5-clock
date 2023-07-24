@@ -20,7 +20,7 @@ const ClockCounter: React.FC<CounterClockProps> = ({ currentTime, reset, startSt
                 <h1 className="text-2xl font-medium text-zinc-100" >
                     Session
                 </h1>
-                <article className="text-4xl font-bold text-zinc-100" >
+                <article id="time-left" className="text-4xl font-bold text-zinc-100" >
                     {formatTime(currentTime.time)}
                 </article>
                 <audio ref={audioRef} id="beep" src={beep} />
