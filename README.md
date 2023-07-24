@@ -1,7 +1,7 @@
 # 25 + 5 Clock
 
 <div align="center">
-  <img src="https://github.com/Steravy/FCC-25+5-clock/blob/main/public/dsk.png" alt="JavaScript Calculator" width="800px" height='auto' />
+  <img src="https://github.com/Steravy/FCC-25-5-clock/blob/main/public/dsk.png" alt="JavaScript Calculator" width="800px" height='auto' />
 </div>
 <div align="center">
   <img src="https://github.com/Steravy/FCC-25+5-clock/blob/main/public/mobile.png" alt="JavaScript Calculator" width="400px" height='auto' />
