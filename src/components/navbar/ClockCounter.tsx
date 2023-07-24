@@ -34,6 +34,10 @@ const ClockCounter: React.FC<CounterClockProps> = ({ currentTime, reset, startSt
                     <IoRefresh className='text-zinc-100 ' size={26} />
                 </button>
             </article>
+            <span className='text-zinc-100 font-thin mt-10' >
+                {'by '} 
+                <span className='font-normal' >Stefan Vitoria</span>
+            </span>
         </article>
     )
 }
