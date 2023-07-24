@@ -1,27 +1,39 @@
-# React + TypeScript + Vite
+# 25 + 5 Clock
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<div align="center">
+  <img src="https://github.com/Steravy/FCC-25+5-clock/blob/main/public/dsk.png" alt="JavaScript Calculator" width="800px" height='auto' />
+</div>
+<div align="center">
+  <img src="https://github.com/Steravy/FCC-25+5-clock/blob/main/public/mobile.png" alt="JavaScript Calculator" width="400px" height='auto' />
+</div>
 
-Currently, two official plugins are available:
+This is a web application built with React as part of the freeCodeCamp projects series to earn the Front End Development Libraries Certification. Note that the aim of this build is not to deliver a great user experience or a great interface design but to get the test pass on FCC.
+Hope you like my implementation! Feel free to use as your own, replicate or whatever...
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- Allows users to do basic maths operations;
+- Responsive design for optimal viewing on different devices
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Getting Started
 
-- Configure the top-level `parserOptions` property like this:
+Follow these instructions to get the project up and running on your local machine:
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+1. Clone the repository: `git clone https://github.com/Steravy/FCC-javascript-calculator/.git`
+2. Navigate to the project folder: `cd javascript-calculator`
+3. Install dependencies: `npm install`
+4. Start the development server: `npm start dev`
+5. Open your web browser and visit: [http://localhost:5173/] - Vite uses this port;
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Technologies Used
+
+- React
+- HTML
+- CSS
+- Tailwind CSS
+- TypeScript
+- Vite
+
+## Author
+
+[Stefan Vitoria](https://github.com/Steravy)
