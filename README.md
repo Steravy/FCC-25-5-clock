@@ -9,20 +9,20 @@
 
 This is a web application built with React as part of the freeCodeCamp projects series to earn the Front End Development Libraries Certification. Note that the aim of this build is not to deliver a great user experience or a great interface design but to get the test pass on FCC.
 Hope you like my implementation! Feel free to use as your own, replicate or whatever...
-This one end up being with the best UI/UX of these series kkkk...
+This one end up being with the best UI/UX of this series kkkk...
 
 ## Features
 
 - Allows users increment and decrement time;
 - Reset time;
-- When the timer reached to 0 a very anoing sound is played;
+- When the timer reached to 0:00 a very anoing sound is played;
 - Responsive design for optimal viewing on different devices;
 
 ## Getting Started
 
 Follow these instructions to get the project up and running on your local machine:
 
-1. Clone the repository: `git clone https://github.com/Steravy/FCC-javascript-calculator/.git`
+1. Clone the repository: `git clone https://github.com/Steravy/FCC-25-5-clock/.git`
 2. Navigate to the project folder: `cd javascript-calculator`
 3. Install dependencies: `npm install`
 4. Start the development server: `npm start dev`
