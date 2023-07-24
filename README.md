@@ -9,11 +9,14 @@
 
 This is a web application built with React as part of the freeCodeCamp projects series to earn the Front End Development Libraries Certification. Note that the aim of this build is not to deliver a great user experience or a great interface design but to get the test pass on FCC.
 Hope you like my implementation! Feel free to use as your own, replicate or whatever...
+This one end up being with the best UI/UX of these series kkkk...
 
 ## Features
 
-- Allows users to do basic maths operations;
-- Responsive design for optimal viewing on different devices
+- Allows users increment and decrement time;
+- Reset time;
+- When the timer reached to 0 a very anoing sound is played;
+- Responsive design for optimal viewing on different devices;
 
 ## Getting Started
 
