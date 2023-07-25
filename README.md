@@ -23,7 +23,7 @@ This one end up being with the best UI/UX of this series kkkk...
 Follow these instructions to get the project up and running on your local machine:
 
 1. Clone the repository: `git clone https://github.com/Steravy/FCC-25-5-clock/.git`
-2. Navigate to the project folder: `cd javascript-calculator`
+2. Navigate to the project folder: `cd FCC-25-5-clock`
 3. Install dependencies: `npm install`
 4. Start the development server: `npm start dev`
 5. Open your web browser and visit: [http://localhost:5173/] - Vite uses this port;
